@@ -1,4 +1,4 @@
-# クラス定義
+
 class Team
     
   attr_accessor :name, :win, :lose, :draw
@@ -17,6 +17,7 @@ class Team
     def show_team_result
     puts "#{self.name}の2020年の成績は#{self.win}勝#{self.lose}敗#{self.draw}分、勝率は#{self.calc_win_rate}です。"
     end
+  end
   
     giants = Team.new("Giants", 67, 45, 8)
     tigers = Team.new("Tigers", 60, 53, 7)
@@ -31,4 +32,3 @@ class Team
     bayStars.show_team_result
     carp.show_team_result
     swallow.show_team_result
-end
